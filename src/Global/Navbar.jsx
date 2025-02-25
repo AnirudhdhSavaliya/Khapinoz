@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import img1 from '../assets/Screenshot-2025-02-22-223336.svg'; 
+import img1 from '../assets/Screenshot-2025-02-22-223336.svg';
 
 const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false); 
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [totalcarts, settotalcart] = useState("")
   // const userName = JSON.parse(localStorage.getItem("user"));
   const navigate = useNavigate();
 
@@ -13,17 +14,21 @@ const Navbar = () => {
     localStorage.removeItem("loggedIn");
     navigate('/login');
   };
+  useEffect(() => {
+    const totalcart = JSON.parse(localStorage.getItem("cart")).length || [];
+    settotalcart(totalcart)
+  }, [totalcarts])
 
   return (
-    <nav className="bg-[#66785F] sticky top-0 z-50"> 
+    <nav className="bg-[#66785F] sticky top-0 z-50">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
-         
+
           <div className="flex items-center">
             <Link to="/">
               <img src={img1} width={120} className="bg-white p-1 rounded" alt="Khapinoz Pizza Logo" />
             </Link>
-          
+
             <button
               className="sm:hidden text-white ml-4 focus:outline-none"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -34,7 +39,7 @@ const Navbar = () => {
             </button>
           </div>
 
-        
+
           <div className="hidden sm:ml-6 sm:flex sm:items-center space-x-4">
             <Link to="/" className="rounded-md bg-[#4B5945] px-3 py-2 text-sm font-medium text-white hover:bg-[#91AC8F]">
               Home
@@ -50,25 +55,25 @@ const Navbar = () => {
             </Link>
           </div>
 
-       
+
           <div className="flex items-center space-x-4">
-           
-            <Link to="/cart" className="text-white hover:text-gray-200 relative">
+
+            <Link to="/addtocart" className="text-white hover:text-gray-200 relative">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
               </svg>
-             
+
               <span className="absolute -top-1 -right-1 bg-white text-red-600 text-xs rounded-full w-4 h-4 flex items-center justify-center">
-                {localStorage.getItem("cartItems") || 0}
+                {totalcarts || 0}
               </span>
             </Link>
 
-            
+
             <Link to="/order" className="rounded-md bg-white px-3 py-2 text-sm font-medium text-black hover:bg-yellow-500 hidden sm:block">
               Order Now
             </Link>
 
-          
+
             <div className="relative">
               <button
                 type="button"
@@ -99,7 +104,7 @@ const Navbar = () => {
           </div>
         </div>
 
-        
+
         {isMobileMenuOpen && (
           <div className="sm:hidden bg-red-700 px-2 pt-2 pb-3 space-y-1">
             <Link to="/" className="block rounded-md bg-red-800 px-3 py-2 text-sm font-medium text-white hover:bg-red-900">

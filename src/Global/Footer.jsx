@@ -3,7 +3,7 @@ import Pizza from '../assets/pizza.png';
 
 function Footer() {
     return (
-        <footer className="bg-red-600 text-white py-8 px-4 md:px-8">
+        <footer className="bg-mid-green text-white py-8 px-4 md:px-8">
             <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div>
                     <h3 className="text-xl font-bold mb-4">🍕 Fresh Pizzas</h3>

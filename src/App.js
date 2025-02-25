@@ -8,6 +8,7 @@ import ForgetPassword from './Component/ForgetPassword';
 import Navbar from './Global/Navbar'; 
 import Footer from './Global/Footer'; 
 import Cart from './Pages/Cart';
+import AddToCart from './Pages/AddToCart';
 
 function App() {
   return (
@@ -19,7 +20,8 @@ function App() {
 
         <Route path="/" element={<ProtectedRoutes />}>
           <Route path="/" element={<><Navbar />   <Home />  <Footer /> </>} />
-          <Route path="/cart/:productId" element={<><Navbar />   <Cart /></>} />
+          <Route path="/cart/:productId" element={<><Navbar />   <Cart /><Footer /></>} />
+          <Route path="/addtocart/" element={<><Navbar />   <AddToCart /><Footer /></>} />
         </Route>
 
       </Routes>

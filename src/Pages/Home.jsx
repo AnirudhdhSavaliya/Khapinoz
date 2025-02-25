@@ -31,7 +31,6 @@ function Home() {
     <>
       <HeroSection />
       <div className="w-full flex-wrap p-5 flex justify-between sm:flex-row flex-col gap-4 ">
-        {/* Filter Dropdown */}
         <select
           name="filter"
           id="filter"
