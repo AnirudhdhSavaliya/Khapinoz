@@ -1,0 +1,162 @@
+[
+    {
+        "id": 1,
+        "title": "Margherita Pizza",
+        "price": 8.99,
+        "description": "Classic pizza with fresh tomatoes, mozzarella, and basil.",
+        "category": "vegetarian",
+        "image": "https://images.unsplash.com/photo-1595854341625-f33ee10dbf94?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "id": 2,
+        "title": "Pepperoni Pizza",
+        "price": 10.49,
+        "description": "Spicy pepperoni with mozzarella on a crispy crust.",
+        "category": "meat",
+        "image": "https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?q=80&w=1476&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "id": 3,
+        "title": "Veggie Supreme Pizza",
+        "price": 9.99,
+        "description": "Bell peppers, olives, onions, and mushrooms.",
+        "category": "vegetarian",
+        "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=1381&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "id": 4,
+        "title": "BBQ Chicken Pizza",
+        "price": 11.99,
+        "description": "Tangy BBQ sauce, chicken, onions, and cheese.",
+        "category": "meat",
+        "image": "https://images.unsplash.com/photo-1734769484424-36b99dd84818?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "id": 5,
+        "title": "Hawaiian Pizza",
+        "price": 10.99,
+        "description": "Ham and pineapple with mozzarella.",
+        "category": "meat",
+        "image": "https://images.unsplash.com/photo-1562835155-a7c2a225e97d?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "id": 6,
+        "title": "Four Cheese Pizza",
+        "price": 9.49,
+        "description": "Mozzarella, cheddar, parmesan, and gorgonzola.",
+        "category": "vegetarian",
+        "image": "https://kitchenatics.com/wp-content/uploads/2020/09/Cheese-pizza-1.jpg"
+    },
+    {
+        "id": 7,
+        "title": "Spicy Sausage Pizza",
+        "price": 12.49,
+        "description": "Spicy Italian sausage with red peppers.",
+        "category": "meat",
+        "image": "https://images.unsplash.com/photo-1600028068383-ea11a7a101f3?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "id": 8,
+        "title": "Mushroom Truffle Pizza",
+        "price": 13.99,
+        "description": "Mushrooms with truffle oil and mozzarella.",
+        "category": "vegetarian",
+        "image": "https://thecookreport.co.uk/wp-content/uploads/2020/01/Truffle-Mushroom-Pizza-4.jpg"
+    },
+    {
+        "id": 9,
+        "title": "Buffalo Chicken Pizza",
+        "price": 11.49,
+        "description": "Spicy buffalo sauce and grilled chicken.",
+        "category": "meat",
+        "image": "https://thecozycook.com/wp-content/uploads/2023/08/Buffalo-Chicken-Pizza-1.jpg"
+    },
+    {
+        "id": 10,
+        "title": "Pesto Veggie Pizza",
+        "price": 10.29,
+        "description": "Pesto base with zucchini and spinach.",
+        "category": "vegetarian",
+        "image": "https://itsallgoodvegan.com/wp-content/uploads/2020/06/IMG_5449.jpg"
+    },
+    {
+        "id": 11,
+        "title": "Meat Lovers Pizza",
+        "price": 13.49,
+        "description": "Pepperoni, sausage, ham, and bacon.",
+        "category": "meat",
+        "image": "https://www.acozykitchen.com/wp-content/uploads/2021/10/MeatLoversPizza-6-909x1024.jpg"
+    },
+    {
+        "id": 12,
+        "title": "Spinach Alfredo Pizza",
+        "price": 9.79,
+        "description": "Creamy alfredo sauce with spinach.",
+        "category": "vegetarian",
+        "image": "https://www.yellowblissroad.com/wp-content/uploads/2023/04/Spinach-Afredo-Pizza-18.jpg"
+    },
+    {
+        "id": 13,
+        "title": "Tandoori Chicken Pizza",
+        "price": 12.99,
+        "description": "Spiced tandoori chicken with onions.",
+        "category": "meat",
+        "image": "https://chefadora.b-cdn.net/medium_1000529681_7684043161.jpg"
+    },
+    {
+        "id": 14,
+        "title": "Olive Delight Pizza",
+        "price": 8.89,
+        "description": "Black and green olives with feta.",
+        "category": "vegetarian",
+        "image": "https://img.freepik.com/premium-photo/delicious-mushroom-olive-pizza-delight-isolated-transparent-background_893610-31836.jpg"
+    },
+    {
+        "id": 15,
+        "title": "Philly Cheesesteak Pizza",
+        "price": 12.79,
+        "description": "Steak, peppers, and onions with cheese.",
+        "category": "meat",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQEU4u_11HztoYrTwozxQbn_DckSFT9hIdYA&s"
+    },
+    {
+        "id": 16,
+        "title": "Artichoke Heart Pizza",
+        "price": 10.59,
+        "description": "Artichoke hearts with garlic sauce.",
+        "category": "vegetarian",
+        "image": "https://theclevermeal.com/wp-content/uploads/2021/10/artichoke-pizza_01-799x1024.jpg"
+    },
+    {
+        "id": 17,
+        "title": "Spicy Chorizo Pizza",
+        "price": 11.89,
+        "description": "Chorizo with jalapenos and cheese.",
+        "category": "meat",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDjITLYUnYg3VEcgYWAyYZBpvQwA1l0losAA&s"
+    },
+    {
+        "id": 18,
+        "title": "Tomato Basil Pizza",
+        "price": 8.69,
+        "description": "Fresh tomatoes and basil leaves.",
+        "category": "vegetarian",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDaiuPv0XvoImG4MVIoFfBHqQaAzZGUsWYHw&s"
+    },
+    {
+        "id": 19,
+        "title": "Bacon Ranch Pizza",
+        "price": 12.29,
+        "description": "Bacon with ranch dressing and cheese.",
+        "category": "meat",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQArsPTUaeq-J8KI3jIAs4ErGRd0AJXa5FLGQ&s"
+    },
+    {
+        "id": 20,
+        "title": "Roasted Garlic Pizza",
+        "price": 9.39,
+        "description": "Roasted garlic with ricotta cheese.",
+        "category": "vegetarian",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxHq5KizHHdHCXjNHZBIRQBbn5Dct8U2NOcQ&s"
+    }
+]
