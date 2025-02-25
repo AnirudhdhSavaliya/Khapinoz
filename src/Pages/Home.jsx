@@ -16,7 +16,7 @@ function Home() {
         let response = await fetch('https://dummyjson.com/recipes')
         let data = await response.json();
         setRecipes(data.recipes)
-      }   
+      }
       catch (error) {
         console.error('Error fetching recipes:', error);
       }
@@ -32,6 +32,8 @@ function Home() {
 
   return (
     <>
+      <div className="div">Hello
+      </div>
       <HeroSection />
       <div className="w-full flex-wrap p-5 flex justify-between sm:flex-row flex-col gap-4">
         <select name="filter" id="filter" onChange={(e) => setFilter(e.target.value)} className="w-full h-12 sm:w-auto p-3 rounded-md border border-gray-300 shadow-sm focus:outline-none focus:ring-2 focus:ring-red-500">
