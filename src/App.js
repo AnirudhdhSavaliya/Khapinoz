@@ -5,9 +5,8 @@ import Register from './Component/Register';
 import Home from './Pages/Home';
 import ProtectedRoutes from './Services/ProtectedRoutes';
 import ForgetPassword from './Component/ForgetPassword';
-import Navbar from './Global/Navbar';
+import Navbar from './Global/Navbar'; 
 import Cart from './Pages/Cart';
-import Footer from './Global/Footer'
 
 function App() {
   return (
@@ -18,12 +17,11 @@ function App() {
         <Route path="/forgetpassword" element={<ForgetPassword />} />
 
         <Route path="/" element={<ProtectedRoutes />}>
-          <Route path="/" element={<><Navbar />   <Home />  <Footer /> </>} />
-          <Route path="/cart/:productId" element={<><Navbar />   <Cart /></>} />
+          <Route path="/" element={<><Navbar />   <Home /></>}/>
+          <Route path="/cart/:productId" element={<><Navbar />   <Cart /></>}/>
         </Route>
 
       </Routes>
-
     </BrowserRouter>
   );
 }

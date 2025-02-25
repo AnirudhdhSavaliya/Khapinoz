@@ -15,7 +15,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-red-600 sticky top-0 z-50"> 
+    <nav className="bg-[#66785F] sticky top-0 z-50"> 
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
          
@@ -36,7 +36,7 @@ const Navbar = () => {
 
         
           <div className="hidden sm:ml-6 sm:flex sm:items-center space-x-4">
-            <Link to="/" className="rounded-md bg-red-700 px-3 py-2 text-sm font-medium text-white hover:bg-red-800">
+            <Link to="/" className="rounded-md bg-[#4B5945] px-3 py-2 text-sm font-medium text-white hover:bg-[#91AC8F]">
               Home
             </Link>
             <Link to="/menu" className="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-red-700">
@@ -64,7 +64,7 @@ const Navbar = () => {
             </Link>
 
             
-            <Link to="/order" className="rounded-md bg-yellow-400 px-3 py-2 text-sm font-medium text-black hover:bg-yellow-500 hidden sm:block">
+            <Link to="/order" className="rounded-md bg-white px-3 py-2 text-sm font-medium text-black hover:bg-yellow-500 hidden sm:block">
               Order Now
             </Link>
 
@@ -123,7 +123,5 @@ const Navbar = () => {
     </nav>
   );
 };
-
-
 
 export default Navbar;
