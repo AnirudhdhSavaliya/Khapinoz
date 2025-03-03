@@ -20,6 +20,51 @@ const Navbar = () => {
     navigate('/login');
   };
 
+  useEffect(() => {
+    const cartData = localStorage.getItem("cart");
+    const totalcart = cartData ? JSON.parse(cartData).length : 0;
+    settotalcart(totalcart);
+  }, []);
+
+  useEffect(() => {
+    const handleClickOutsideDropdown = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setIsDropdownOpen(false);
+      }
+    };
+
+    if (isDropdownOpen) {
+      document.addEventListener("mousedown", handleClickOutsideDropdown);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutsideDropdown);
+    };
+  }, [isDropdownOpen]);
+
+  useEffect(() => {
+    const handleClickOutsideMenu = (event) => {
+      if (
+        mobileMenuRef.current &&
+        !mobileMenuRef.current.contains(event.target) &&
+        menuButtonRef.current &&
+        !menuButtonRef.current.contains(event.target)
+      ) {
+        setIsMobileMenuOpen(false);
+      }
+    };
+
+    if (isMobileMenuOpen) {
+      document.addEventListener("touchstart", handleClickOutsideMenu);
+      document.addEventListener("mousedown", handleClickOutsideMenu);
+    }
+
+    return () => {
+      document.removeEventListener("touchstart", handleClickOutsideMenu);
+      document.removeEventListener("mousedown", handleClickOutsideMenu);
+    };
+  }, [isMobileMenuOpen]);
+
   return (
     <nav className="bg-[#66785F] sticky top-0 z-50">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -31,6 +76,7 @@ const Navbar = () => {
             </Link>
 
             <button
+              ref={menuButtonRef} 
               className="sm:hidden text-white ml-4 focus:outline-none"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             >
@@ -41,16 +87,16 @@ const Navbar = () => {
           </div>
 
           <div className="hidden sm:ml-6 sm:flex sm:items-center space-x-4">
-            <Link to="/" className="rounded-md bg-[#4B5945] px-3 py-2 text-sm font-medium text-white hover:bg-[#91AC8F]">
+            <Link to="/" className="rounded-md bg-dark-green px-3 py-2 text-sm font-medium text-white hover:bg-light-green">
               Home
             </Link>
-            <Link to="/menu" className="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-red-700">
+            <Link to="/menu" className="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-light-green">
               Menu
             </Link>
-            <Link to="/offers" className="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-red-700">
+            <Link to="/offers" className="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-light-green">
               Offers
             </Link>
-            <Link to="/locations" className="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-red-700">
+            <Link to="/locations" className="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-light-green">
               Locations
             </Link>
           </div>
@@ -61,7 +107,7 @@ const Navbar = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
               </svg>
               <span className="absolute -top-1 -right-1 bg-white text-red-600 text-xs rounded-full w-4 h-4 flex items-center justify-center">
-                {localStorage.getItem("cartItems") || 0}
+                {totalcarts || 0}
               </span>
             </Link>
 
