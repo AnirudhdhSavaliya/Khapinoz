@@ -107,7 +107,7 @@
 import React, { useState, useEffect } from "react";
 import HeroSection from "../Component/Home/HeroSlider";
 import { useNavigate } from "react-router-dom";
-// import apiServices from "../API/";
+import apiServices from "../API/api";
 
 function Home() {
   const [recipes, setRecipes] = useState([]);
