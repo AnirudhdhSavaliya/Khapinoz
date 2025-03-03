@@ -22,7 +22,7 @@ function Register() {
                     className="hidden md:block md:w-1/3 bg-cover bg-center relative"
                     style={{
                         backgroundImage: "url('https://images.pexels.com/photos/1565982/pexels-photo-1565982.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')", // New reliable pizza image
-                        backgroundColor: '#dc2626', // Fallback red color if image fails
+                        backgroundColor: '#dc2626',
                     }}
                 >
                     <div className="absolute inset-0 bg-red-600 bg-opacity-60 flex flex-col justify-center p-8">
