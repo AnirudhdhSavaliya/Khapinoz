@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import { useAuth } from '../Pages/AuthContext';
 
 function Register() {
+    const { register } = useAuth()
     const navigate = useNavigate();
     const [input, setInput] = useState({
         name: '',
@@ -12,7 +14,10 @@ function Register() {
     function handleSubmit(e) {
         e.preventDefault();
         localStorage.setItem("user", JSON.stringify(input));
+        localStorage.setItem("profileData", JSON.stringify(input));
         navigate("/login");
+        register({ name: input.name })
+        register(input);
     }
 
     return (
