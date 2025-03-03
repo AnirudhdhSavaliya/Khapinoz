@@ -5,7 +5,7 @@ import ProtectedRoutes from './Services/ProtectedRoutes';
 import Navbar from './Global/Navbar';
 import Footer from './Global/Footer';
 import Cart from './Pages/Cart';
-import AddToCart from './Pages/AddToCart';
+import AddToCart from './Pages/Cart';
 
 function App() {
   return (
