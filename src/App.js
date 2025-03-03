@@ -1,23 +1,32 @@
 import React from 'react';
-import { Route, Routes } from "react-router-dom";
+import {  Routes, Route } from "react-router-dom";
+import Login from './Component/Login';
+import Register from './Component/Register';
 import Home from './Pages/Home';
 import ProtectedRoutes from './Services/ProtectedRoutes';
-import Navbar from './Global/Navbar';
-import Footer from './Global/Footer';
+import ForgetPassword from './Component/ForgetPassword';
+import Navbar from './Global/Navbar'; 
+import Footer from './Global/Footer'; 
 import Cart from './Pages/Cart';
-import AddToCart from './Pages/Cart';
+import AddToCart from './Pages/AddToCart';
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<ProtectedRoutes />}>
-        <Route path="/" element={<><Navbar />   <Home />  <Footer /> </>} />
-        <Route path="/cart/:productId" element={<><Navbar />   <Cart /><Footer /></>} />
-        <Route path="/addtocart/" element={<><Navbar />   <AddToCart /><Footer /></>} />
-      </Route>
-    </Routes>
+   
+      <Routes>
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/forgetpassword" element={<ForgetPassword />} />
 
+        <Route path="/" element={<ProtectedRoutes />}>
+          <Route path="/" element={<><Navbar />   <Home />  <Footer /> </>} />
+          <Route path="/cart/:productId" element={<><Navbar />   <Cart /><Footer /></>} />
+          <Route path="/addtocart" element={<><Navbar />   <AddToCart /><Footer /></>} />
+        </Route>
 
+      </Routes>
+
+   
   );
 }
 

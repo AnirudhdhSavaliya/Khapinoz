@@ -1,0 +1,123 @@
+[
+    {
+      "id": "CD001",
+      "name": "Coca-Cola Classic",
+      "description": "The original and refreshing cola taste, enjoyed worldwide since 1886.",
+      "initial_price": 200,
+      "offer_price": 180,
+      "volume": "330ml",
+      "category": "Soft Drink",
+      "brand": "Coca-Cola",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxY3E6eT7LFijUGjkMdU0CnJ9fL7v7Pjun9w&s",
+      "rating": 3.5
+    },
+    {
+      "id": "CD002",
+      "name": "Pepsi",
+      "description": "Bold and smooth cola with a perfect balance of sweetness and fizz.",
+      "initial_price": 190,
+      "offer_price": 170,
+      "volume": "330ml",
+      "category": "Soft Drink",
+      "brand": "Pepsi",
+      "image": "https://images-cdn.ubuy.co.in/669113c35b35f364ea2a8f3d-pepsi-cola-36-12-ounce-cans.jpg",
+      "rating": 4.7
+    },
+    {
+      "id": "CD003",
+      "name": "Sprite",
+      "description": "Crisp and clean lemon-lime soda, the ultimate thirst quencher.",
+      "initial_price": 180,
+      "offer_price": 160,
+      "volume": "330ml",
+      "category": "Soft Drink",
+      "brand": "Sprite",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1XqD0bf2QWOd60yx8hsW2QY8UI08SZTcbrA&s",
+      "rating": 4.6
+    },
+    {
+      "id": "CD004",
+      "name": "Fanta Orange",
+      "description": "Bright and bubbly orange soda with a juicy citrus taste.",
+      "initial_price": 185,
+      "offer_price": 165,
+      "volume": "330ml",
+      "category": "Soft Drink",
+      "brand": "Fanta",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS22SfzbAdqlq_cVIct_LR9iGubPME_6qr8Jg&s",
+      "rating": 4.5
+    },
+    {
+      "id": "CD005",
+      "name": "Mountain Dew",
+      "description": "High-energy citrus soda with a bold and electrifying taste.",
+      "initial_price": 210,
+      "offer_price": 190,
+      "volume": "300ml",
+      "category": "Soft Drink",
+      "brand": "Mountain Dew",
+      "image": "https://marino.ae/cdn/shop/files/Mountain-Dew-Can-300-ml-24x300ml-_1-carton_-Marino.AE-234610432.jpg?v=1707549024",
+      "rating": 4.8
+    },
+    {
+      "id": "CD006",
+      "name": "Iced Lemon Tea",
+      "description": "Refreshing black tea with a natural lemon twist, served chilled.",
+      "initial_price": 250,
+      "offer_price": 230,
+      "volume": "500ml",
+      "category": "Tea",
+      "brand": "Lipton",
+      "image": "https://m.media-amazon.com/images/I/71KTPpHKPJL.jpg",
+      "rating": 4.9
+    },
+    {
+      "id": "CD007",
+      "name": "Dr Pepper",
+      "description": "A unique and bold soft drink with 23 signature flavors.",
+      "initial_price": 195,
+      "offer_price": 175,
+      "volume": "355ml",
+      "category": "Soft Drink",
+      "brand": "Dr Pepper",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1Ely6b-wVP6B9UNQWl25WClVGB8mHPqWmDQ&s",
+      "rating": 5
+    },
+    {
+      "id": "CD008",
+      "name": "Mirinda",
+      "description": "Fizzy and fun orange soda with a tangy citrus burst.",
+      "initial_price": 175,
+      "offer_price": 155,
+      "volume": "330ml",
+      "category": "Soft Drink",
+      "brand": "Mirinda",
+      "image": "https://www.bigbasket.com/media/uploads/p/xxl/40327061_1-mirinda-soft-drink.jpg",
+      "rating": 4.2
+    },
+    {
+      "id": "CD009",
+      "name": "7UP",
+      "description": "Light and refreshing lemon-lime soda, perfect for any occasion.",
+      "initial_price": 180,
+      "offer_price": 160,
+      "volume": "330ml",
+      "category": "Soft Drink",
+      "brand": "7UP",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcjwSEpQ5mEGvpwYyTFx0AbRwVn54DFGOhnw&s",
+      "rating": 4.7
+    },
+    {
+      "id": "CD010",
+      "name": "Root Beer",
+      "description": "Classic root beer with a creamy, frothy texture and rich flavor.",
+      "initial_price": 230,
+      "offer_price": 210,
+      "volume": "500ml",
+      "category": "Soft Drink",
+      "brand": "A&W",
+      "image": "https://images-cdn.ubuy.co.in/66088746dadcd176ba0d4420-a-w-root-beer-soda-pop-12oz-cans.jpg",
+      "rating": 4.3
+    }
+  ]
+  

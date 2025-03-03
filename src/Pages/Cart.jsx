@@ -287,8 +287,8 @@ const Cart = () => {
                                     {recipes.ingredients?.join(", ") || "Not available"}
                                 </p>
                                 <p className="text-gray-600 text-lg mb-2">
-                                    <span className="font-medium">Price: ₹100</span>{" "}
-                                          
+                                    <span className="font-medium">Price:</span>{" "}
+                                    {recipes.caloriesPerServing}
                                 </p>
                             </div>
                             <div className="space-y-6">
