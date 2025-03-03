@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
+
 import { Link, useNavigate } from 'react-router-dom';
+import { useAuth } from '../Pages/AuthContext';
 
 function Login() {
+    const { Login } = useAuth();
     const navigate = useNavigate();
     const [input, setInput] = useState({
         email: '',
@@ -17,6 +20,7 @@ function Login() {
         }
         if (input.email === loggedUser.email && input.password === loggedUser.password) {
             alert('Login Successfully');
+            Login({ email: input.email, password: input.password });
             navigate('/');
             localStorage.setItem('loggedIn', true);
         } else {

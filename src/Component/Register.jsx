@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import { useAuth } from '../Pages/AuthContext';
 
 function Register() {
+    const { register } = useAuth()
     const navigate = useNavigate();
     const [input, setInput] = useState({
         name: '',
@@ -12,7 +14,10 @@ function Register() {
     function handleSubmit(e) {
         e.preventDefault();
         localStorage.setItem("user", JSON.stringify(input));
+        localStorage.setItem("profileData", JSON.stringify(input));
         navigate("/login");
+        register({ name: input.name })
+        register(input);
     }
 
     return (
@@ -21,8 +26,8 @@ function Register() {
                 <div
                     className="hidden md:block md:w-1/3 bg-cover bg-center relative"
                     style={{
-                        backgroundImage: "url('https://images.pexels.com/photos/1565982/pexels-photo-1565982.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')", // New reliable pizza image
-                        backgroundColor: '#dc2626', // Fallback red color if image fails
+                        backgroundImage: "url('https://images.pexels.com/photos/1565982/pexels-photo-1565982.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')", 
+                        backgroundColor: '#dc2626',
                     }}
                 >
                     <div className="absolute inset-0 bg-red-600 bg-opacity-60 flex flex-col justify-center p-8">
