@@ -1,10 +1,10 @@
 import React from 'react';
 import {  Routes, Route } from "react-router-dom";
-import Login from './Component/Login';
-import Register from './Component/Register';
+import Login from './Pages/Login';
+import Register from './Pages/Register';
 import Home from './Pages/Home';
 import ProtectedRoutes from './Services/ProtectedRoutes';
-import ForgetPassword from './Component/ForgetPassword';
+import ForgetPassword from './Pages/ForgetPassword';
 import Navbar from './Global/Navbar'; 
 import Footer from './Global/Footer'; 
 import Cart from './Pages/Cart';
@@ -25,7 +25,6 @@ function App() {
           <Route path="/profile" element={<><Navbar />   <Profile />  <Footer /> </>} />
           <Route path="/addtocart" element={<><Navbar />   <AddToCart /><Footer /></>} />
         </Route>
-
       </Routes>
 
    

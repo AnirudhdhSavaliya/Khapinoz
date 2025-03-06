@@ -16,7 +16,7 @@ function Profile() {
     useEffect(() => {
         const savedProfile = JSON.parse(localStorage.getItem("profileData"));
         if (savedProfile) {
-            setName(savedProfile.name || "");
+            setName(savedProfile.name || "");                   
             setNumber(savedProfile.number || "");
             setEmail(savedProfile.email || "");
             setAddress(savedProfile.address || "");
